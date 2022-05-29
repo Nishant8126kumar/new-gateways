@@ -18,5 +18,9 @@ zuul:
   routes:
     ORDER-MANAGEMENT:
       path: /oms/**
-      url: http://localhost:8081
+      serviceId: ORDER-MANAGEMENT
+      customSensitiveHeaders: true
+    USER-AUTHENTICATION-SERVICE:
+      path: /ums/**
+      serviceId: USER-AUTHENTICATION-SERVICE
       customSensitiveHeaders: true
